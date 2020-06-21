@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- get header ('Page Name'. 'Title')-->
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="FinalExam " />
+		<meta name="author" content="ChanSiawZheng" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Seminars | Enquiry</title>
+		<link rel="icon" href="images/logo.jpg" type="image/x-icon" /> 
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="styles/style.css" />
+		<script src="scripts/process.js"></script>
+
+	</head>
+	
+<body>
+
+<header class="header">
+		<div class="nav-bar" id="myNavBar">
+	<p><a class="logo" href ="index.html">
+		<img src="images/logo.jpg" alt="Logo" />
+	</a>
+	</p>
+	
+<!--Menu Section-->	
+	<p>
+	<a href="index.html" >Home</a>
+	<a href="register.html" class="active">Register</a>
+	<a href="process.php">Process</a>
+	<a href="manager.php">Manager</a>
+	
+  	</p><!--Menu End-->
+</div>
+</header><!--Header End-->
+
+<!--Directory Section-->
+<div class="directory">
+	<div class="container">
+		<a href="index.html">Home </a>>
+        <a href="register.html">Register </a>
+	</div>
+</div><!--Directory End-->
+	
+	<!--Register section -->
+	<section class="profile">
+		<div class="container">
+
+			<p><a class="logo" href ="index.html">
+				<img src="images/logo.jpg" alt="Logo" />
+			</a>
+			</p>
+			
+		<h2>Sign Up for It NOW!</h2>
+		<hr />
+			<form class="form" method="post" action="process.php" onsubmit="return validate()">
+				<fieldset>
+					<legend>Customer Details</legend>
+					<p><label for="txtbox-reference">Seminar Reference Number</label> 
+					<input type="text" id="txtbox-reference" name= "reference" placeholder="S00001"   />
+					</p>
+					<p><label for="txtbox-username">Username</label>
+					<input type="text" id="txtbox-username" name= "username" placeholder="ChanSiawZheng" />
+					</p>
+					
+                    <p><label>Qualification</label></p>				
+						<input type="radio" id="txtbox-qualification" name="qualification" value="undergraduate"/>
+						<label for="txtbox-qualification">Undergraduate</label><br>	
+
+						<input type="radio" id="txtbox-qualification" name="qualification" value="postgraduate"/>
+						<label for="txtbox-qualification">Postgraduate</label><br>	
+						
+
+                    <p><label class="txtbox-emai">Email Address</label>
+					<input type="email" class="txtbox-email" name="email"  />
+					</p>									
+					<p><label for="phone">Phone Number</label>
+					<input type="text" id="phone" name="phoneno" placeholder="0123456789" />
+					</p>
+                    </fieldset>
+
+				<p>
+				<input type="submit" value="Submit" class="submit" />
+				</p>
+				
+			</form>
+		</div>
+	</section><!-- End register section -->
+	
+	
+	
+	<div class="parallax2"></div>
+	<!--Footer-->	
+	<footer class="footer">
+	<div class="row">
+		<div class="column">
+			<h3>Contact</h3>
+			<p>101217869@swin.edu.au</p>
+			<p>(+61)0401037123</p>
+			<p>Swinburne University of Technology Hawthorn Campus,
+			<br/>
+			<br />Melbourne Australia</p>
+			<div class="bottom-bar">
+     <p> 2020 Copyright © SEMINARS AUSTRALIA. All Rights Reserved </p>
+	  </div>
+		</div>
+		
+		<div class="column">
+			<h3>Navigate</h3>
+				<ul class="footer-links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="register.html">Register</a></li>
+					<li><a href="process.php">Process</a></li>
+					<li><a href="manager.php">Manager</a></li>
+				</ul>
+		</div>
+		
+			<div class="column">
+			<h4>Connect</h4>
+			<a class="facebook" href="https://www.facebook.com">
+				<i class="fa fa-facebook-square"> </i>
+			</a>	
+			<a class="twitter" href="https://www.twitter.com">
+				<i class="fa fa-twitter-square"> </i>
+			</a>
+			<a class="instagram" href="https://www.instagram.com">
+				<i class="fa fa-instagram"> </i>
+			</a>
+			
+		</div>
+		
+	  </div>
+	 </footer> <!-- End footer section -->	
+	</body> 
+	</html>
